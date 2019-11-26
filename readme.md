@@ -9,8 +9,18 @@ Intuitively, we may expect an uptick in the sales of umbrellas before a big thun
 ## Assumptions
 
 1. Stations are within the same city
+2. Behavior of product sales across all stores has similar characteristics.
+3. These are the records of all transactions involving the 111 "weather-sensitive" products from 2012 to 2014.
 
-## Data preprocessing
+## EDA
 
-1. We are going to analyze how different the temperature conditions are from station to station, to see if the sales data can be aggregated or there should be a model for each store.
+Some highlights about EDA:
 
+1. Overall sales trend is in decline for these 111 products for the company.
+2. There is significant seasonality in the sales, which is why forecasting sales for most representative products could be important for the company.
+3. About 92% of the sales are represented by the top 10 products in sales (out of 111), being products 45, 9 and 5 accountable for about 61% of the total items sold, which is over 2.7 M products during the three years. These top 3 products will be used for this analysis.
+4. The variability in the demand changes over time, with an overall declining trend for all top 3 products. 
+5. There are significant null values in weather stations, this require some data preprocessing.
+6 Station 5 and station 8 (and all stores related to these stations) will be ommited from the analysis since these time-series are incomplete and mostly null.
+7 We can evidence that the behavior across stations is not constant at all, hence, we will will not be able to aggregate the data in order to generate predictions for the whole company warehouse.
+8. Our option is to generalize the model across weather conditions. This is to say, we can treat each day at each store as a data point that results in a count of sales at each store for each product.
