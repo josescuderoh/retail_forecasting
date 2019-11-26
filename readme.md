@@ -8,7 +8,7 @@ Intuitively, we may expect an uptick in the sales of umbrellas before a big thun
 
 ## Assumptions
 
-1. Stations are within the same city
+1. Weather stations are within the same city
 2. Behavior of product sales across all stores has similar characteristics.
 3. These are the records of all transactions involving the 111 "weather-sensitive" products from 2012 to 2014.
 
@@ -16,7 +16,7 @@ Intuitively, we may expect an uptick in the sales of umbrellas before a big thun
 
 Some highlights about EDA:
 
-1. Overall sales trend is in decline for these 111 products for the company.
+1. Overall sales trend is in decline for these 111 products.
 2. There is significant seasonality in the sales, which is why forecasting sales for most representative products could be important for the company.
 3. About 92% of the sales are represented by the top 10 products in sales (out of 111), being products 45, 9 and 5 accountable for about 61% of the total items sold, which is over 2.7 M products during the three years. These top 3 products will be used for this analysis.
 4. The variability in the demand changes over time, with an overall declining trend for all top 3 products. 
@@ -29,4 +29,4 @@ Some highlights about EDA:
 
 Some processes were carried out for preprocessing the data before analysis:
 
-* The data was queried according to the previous
+* The data was queried according to EDA performed.
