@@ -24,3 +24,9 @@ Some highlights about EDA:
 6 Station 5 and station 8 (and all stores related to these stations) will be ommited from the analysis since these time-series are incomplete and mostly null.
 7 We can evidence that the behavior across stations is not constant at all, hence, we will will not be able to aggregate the data in order to generate predictions for the whole company warehouse.
 8. Our option is to generalize the model across weather conditions. This is to say, we can treat each day at each store as a data point that results in a count of sales at each store for each product.
+
+## Data preprocessing
+
+Some processes were carried out for preprocessing the data before analysis:
+
+* The data was queried according to the previous
