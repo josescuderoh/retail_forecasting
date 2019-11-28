@@ -32,4 +32,12 @@ Some processes were carried out for preprocessing the data before analysis:
 
 * The data was queried according to EDA performed, extracting only relevant products and weather stations.
 * The column for weather features `codesum` was broken appart into multiple columns in order to identify extreme events such as: tornadoes, thunderstorms, hail, rain, snow, etc. For more information visit the [docs](Docs/noaa_weather_qclcd_documentation.pdf).
+* (...)
 
+## Modeling
+
+(...)
+
+## References
+
+* Watanabe, T., Muroi, H., Naruke, M., Yono, K., Kobayashi, G., & Yamasaki, M. (2016, December). Prediction of regional goods demand incorporating the effect of weather. In 2016 IEEE International Conference on Big Data (Big Data) (pp. 3785-3791). IEEE.
