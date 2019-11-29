@@ -13,7 +13,7 @@ Intuitively, we may expect an uptick in the sales of umbrellas before a big thun
 3. These are the records of all transactions involving the 111 "weather-sensitive" products from 2012 to 2014.
 4. Stores with similar weather behavior will grouped into cities and people from the city is expected to present the similar weather sensiste shopping patterns.
 
-## EDA
+## Exploratory Analysis
 
 Some highlights about EDA:
 
@@ -26,7 +26,7 @@ Some highlights about EDA:
 7 We can evidence that, the behavior across stations is not constant at all, hence, we will will not be able to aggregate the data in order to generate predictions for the whole company warehouse.
 8. Our approach is to generalize the model across weather conditions. This is to say, clustering the stores given its weather and then model the sales for all products for each cluster (called cities in this analysis).
 
-## Data preprocessing
+## Feature Engineering
 
 Some processes were carried out for preprocessing the data before analysis:
 
