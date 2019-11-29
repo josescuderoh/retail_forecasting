@@ -24,7 +24,7 @@ Some highlights about EDA:
 5. There are significant null values in some weather stations, this require some data preprocessing.
 6 Station 5 and station 8 (and all stores related to these stations) **will be ommited** from the analysis since these time-series are incomplete and mostly null.
 7 We can evidence that, the behavior across stations is not constant at all, hence, we will will not be able to aggregate the data in order to generate predictions for the whole company warehouse.
-8. Our approach is to generalize the model across weather conditions. This is to say, clustering the stores given its weather and then model the sales for all products for each cluster (called cities in this analysis).
+8. Our approach is to generalize the model across weather conditions. This is to say, clustering the stores given its weather and then model the sales for products of each cluster (called cities in this analysis).
 
 ## Feature Engineering
 
@@ -32,7 +32,10 @@ Some processes were carried out for preprocessing the data before analysis:
 
 * The data was queried according to EDA performed, extracting only relevant products and weather stations.
 * The column for weather features `codesum` was broken appart into multiple columns in order to identify extreme events such as: tornadoes, thunderstorms, hail, rain, snow, etc. For more information visit the [docs](Docs/noaa_weather_qclcd_documentation.pdf).
-* (...)
+* A variable describing the number of items sold the previous day at the specific store was added to as a feature.
+* A flag for indicating if the day was weekend or weekday was implemented.
+* The month of the year was included as a cyclical variable by transforming it into two components (sine and cosine) or polar coordinates. This helps us define proximity between first month of a year and last month of the previous year.
+* Added a city variable using the clusters obtained from step 8 in EDA.
 
 ## Modeling
 
